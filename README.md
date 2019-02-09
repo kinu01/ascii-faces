@@ -2,7 +2,7 @@ STEPS TO RUN APP
 ====
 for ios:
 ----
-  git clone https://github.com/kinu01/cool-ascii-faces.git
+  git clone https://github.com/kinu01/ascii-faces.git
 
   npm install
 
