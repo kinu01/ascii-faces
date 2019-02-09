@@ -90,7 +90,7 @@ class ProductItem extends Component {
               <Text style={textStyles.date}> {generateRelativeDate(this.props.product.date)} </Text>
           </View>
             <View style={viewStyles.imageFieldContainer} >
-              <Text style={textStyles.product}> {this.props.product.face} </Text>
+              <Text style={[textStyles.product, {fontSize: this.props.product.size}]}> {this.props.product.face} </Text>
           </View>
             <View style={viewStyles.priceFieldContainer} >
               <Text style={textStyles.price}>{ '$' + formatCentToDollar(this.props.product.price) } </Text>

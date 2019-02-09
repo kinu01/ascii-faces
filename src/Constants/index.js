@@ -24,7 +24,7 @@ const DEV = {
     baseURL: 'http://localhost:3000/',
     timeout: 9000,
   },
-  AD_PARAMS: '/ads/?r=',
+  AD_PARAMS: 'https://unsplash.it/',
   AD_URL: 'https://unsplash.it'
 }
 

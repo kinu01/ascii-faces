@@ -8,10 +8,6 @@ for ios:
 
   npm run-script build-ios
 
-NOTE: Remember to navigate to path 'src/Constants/index.js'
-      and change '/api/' to a valid baseURL
-      and also add api endpoint. e.g('/products');
-
 Observed issue: flatList onEndReached on ProductsGridScreen.js called multiple times and tends to cause problems.
 
 Action taken: tried minimizing behaviour by applying multiple checks, but still not perfect.

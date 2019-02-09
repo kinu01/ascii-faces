@@ -215,7 +215,7 @@ class ProductsGridScreen extends Component {
         {/* header three container */}
         <View style={viewStyles.productCountContainer}>
           <Text style={textStyles.productCountTitle}>
-            {products.length} cool faces
+            cool faces
           </Text>
         </View>
 
