@@ -1,0 +1,24 @@
+dependencies: \
+  /Users/shola.emmanuel/GitHubProjects/c/test/coolAsciiFaces/node_modules/react-native/third-party/folly-2018.10.22.00/folly/Demangle.cpp \
+  /Users/shola.emmanuel/GitHubProjects/c/test/coolAsciiFaces/node_modules/react-native/React/../third-party/folly-2018.10.22.00/folly/Demangle.h \
+  /Users/shola.emmanuel/GitHubProjects/c/test/coolAsciiFaces/node_modules/react-native/React/../third-party/folly-2018.10.22.00/folly/FBString.h \
+  /Users/shola.emmanuel/GitHubProjects/c/test/coolAsciiFaces/node_modules/react-native/React/../third-party/folly-2018.10.22.00/folly/CppAttributes.h \
+  /Users/shola.emmanuel/GitHubProjects/c/test/coolAsciiFaces/node_modules/react-native/React/../third-party/folly-2018.10.22.00/folly/Portability.h \
+  /Users/shola.emmanuel/GitHubProjects/c/test/coolAsciiFaces/node_modules/react-native/React/../third-party/folly-2018.10.22.00/folly/portability/Config.h \
+  /Users/shola.emmanuel/GitHubProjects/c/test/coolAsciiFaces/node_modules/react-native/React/../third-party/folly-2018.10.22.00/folly/CPortability.h \
+  /Users/shola.emmanuel/GitHubProjects/c/test/coolAsciiFaces/node_modules/react-native/React/../third-party/folly-2018.10.22.00/folly/Traits.h \
+  /Users/shola.emmanuel/GitHubProjects/c/test/coolAsciiFaces/node_modules/react-native/React/../third-party/folly-2018.10.22.00/folly/hash/Hash.h \
+  /Users/shola.emmanuel/GitHubProjects/c/test/coolAsciiFaces/node_modules/react-native/React/../third-party/folly-2018.10.22.00/folly/Utility.h \
+  /Users/shola.emmanuel/GitHubProjects/c/test/coolAsciiFaces/node_modules/react-native/React/../third-party/folly-2018.10.22.00/folly/functional/ApplyTuple.h \
+  /Users/shola.emmanuel/GitHubProjects/c/test/coolAsciiFaces/node_modules/react-native/React/../third-party/folly-2018.10.22.00/folly/functional/Invoke.h \
+  /Users/shola.emmanuel/GitHubProjects/c/test/coolAsciiFaces/node_modules/react-native/React/../third-party/folly-2018.10.22.00/folly/Preprocessor.h \
+  /Users/shola.emmanuel/GitHubProjects/c/test/coolAsciiFaces/node_modules/react-native/React/../third-party/folly-2018.10.22.00/folly/hash/SpookyHashV1.h \
+  /Users/shola.emmanuel/GitHubProjects/c/test/coolAsciiFaces/node_modules/react-native/React/../third-party/folly-2018.10.22.00/folly/hash/SpookyHashV2.h \
+  /Users/shola.emmanuel/GitHubProjects/c/test/coolAsciiFaces/node_modules/react-native/React/../third-party/folly-2018.10.22.00/folly/lang/Bits.h \
+  /Users/shola.emmanuel/GitHubProjects/c/test/coolAsciiFaces/node_modules/react-native/React/../third-party/folly-2018.10.22.00/folly/ConstexprMath.h \
+  /Users/shola.emmanuel/GitHubProjects/c/test/coolAsciiFaces/node_modules/react-native/React/../third-party/folly-2018.10.22.00/folly/lang/Assume.h \
+  /Users/shola.emmanuel/GitHubProjects/c/test/coolAsciiFaces/node_modules/react-native/React/../third-party/folly-2018.10.22.00/folly/portability/Builtins.h \
+  /Users/shola.emmanuel/GitHubProjects/c/test/coolAsciiFaces/node_modules/react-native/React/../third-party/folly-2018.10.22.00/folly/lang/Exception.h \
+  /Users/shola.emmanuel/GitHubProjects/c/test/coolAsciiFaces/node_modules/react-native/React/../third-party/folly-2018.10.22.00/folly/memory/Malloc.h \
+  /Users/shola.emmanuel/GitHubProjects/c/test/coolAsciiFaces/node_modules/react-native/React/../third-party/folly-2018.10.22.00/folly/memory/detail/MallocImpl.h \
+  /Users/shola.emmanuel/GitHubProjects/c/test/coolAsciiFaces/node_modules/react-native/React/../third-party/folly-2018.10.22.00/folly/detail/Demangle.h
