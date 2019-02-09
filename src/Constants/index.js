@@ -21,7 +21,7 @@ export const WELCOME_MESSAGE = {
 export const API_ENDPOINT = '/products'
 const DEV = {
   API: {
-    baseURL: '/api/',
+    baseURL: 'http://localhost:3000/',
     timeout: 9000,
   },
   AD_PARAMS: '/ads/?r=',

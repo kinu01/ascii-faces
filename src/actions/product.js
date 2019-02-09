@@ -76,8 +76,8 @@ export const fetchProducts = () =>  async (dispatch, getState) => {
 					_sort: sort
 				}
 			});
-			console.log(response.data.products);
-			if (response.data.products.length > 1) {
+			console.log(response.data);
+			if (response.data.length > 1) {
 				//products are received
 				dispatch(FetchingProducts(false))
 				dispatch(loadingMore(false))
@@ -85,10 +85,10 @@ export const fetchProducts = () =>  async (dispatch, getState) => {
 				//increase page count for next fecth
 				dispatch(increasePageCount())
 			}
-			if (response.data.products.length < limit ) {
+			if (response.data.length < limit ) {
 				dispatch(endOfCatalog())
 			}
-			if (response.data.products.length < 1 && products.length < 1) {
+			if (response.data.length < 1 && products.length < 1) {
 				dispatch(noProductsAvailable(true))
 			}
 		} catch (err) {
@@ -133,7 +133,7 @@ export const endOfCatalog = () => (dispatch) => {
 //this is a helper method for fetchproducts action creator
 addProductOrSponsporAdToStore = ({products, idleFetchedProducts, response, adIndex, isIdleFetch}, dispatch,) => {
 	let startCount = products.length + idleFetchedProducts.length,
-	 		countLength = response.data.products.length + products.length + idleFetchedProducts.length,
+	 		countLength = response.data.length + products.length + idleFetchedProducts.length,
 			responseDataIndex = 0;
 
 	for (startCount, countLength , responseDataIndex; startCount < countLength; startCount++) {
@@ -151,8 +151,8 @@ addProductOrSponsporAdToStore = ({products, idleFetchedProducts, response, adInd
 handleFetchedProduct = (responseDataIndex, response, isIdleFetch, dispatch) => {
 	//are we making an idle time fetch, if so add to state idle products array else just add to state products array
 	if (isIdleFetch) {
-		dispatch(addIdleFetchedProducts(response.data.products[responseDataIndex]))
+		dispatch(addIdleFetchedProducts(response.data[responseDataIndex]))
 	}else {
-		dispatch(addProducts(response.data.products[responseDataIndex]))
+		dispatch(addProducts(response.data[responseDataIndex]))
 	}
 }

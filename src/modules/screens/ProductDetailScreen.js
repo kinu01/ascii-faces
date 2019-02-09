@@ -160,7 +160,7 @@ class ProductDetailScreen extends Component {
 
             {/*Price Block*/}
             <View style={viewStyles.priceContainerStyle}>
-              <Text style= {textStyles.price}>{formatCentToDollar(this.product.price)}</Text>
+              <Text style= {textStyles.price}>{'$' + formatCentToDollar(this.product.price)}</Text>
             </View>
 
               {/*Size Block*/}
