@@ -8,7 +8,7 @@ for ios:
 
   npm run-script build-ios
 
-Observed issue: flatList onEndReached on ProductsGridScreen.js called multiple times and tends to cause problems.
+Observed issue: React Native flatList with onEndReached props used on ProductsGridScreen.js file is called multiple times for unknown reasons and tends to cause problems like sometimes making sponspor ad not display.
 
 Action taken: tried minimizing behaviour by applying multiple checks, but still not perfect.
 
