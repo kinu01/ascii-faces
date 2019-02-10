@@ -114,7 +114,6 @@ const grids = (state = initialGrids, action) => {
 					idleFetchedProducts: [],
 					products: [],
 					page: 1,
-					modCount: 0,
 					isIdleFetch: false,
 					isFetching: false,
 					isLoadingMore: false,
