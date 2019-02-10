@@ -123,10 +123,14 @@ export const handleIdleFetch = () => (dispatch) => {
 }
 
 export const endOfCatalog = () => (dispatch) => {
-	console.log('end of catalog');
 	dispatch(loadingMore(false))
 	dispatch(FetchingProducts(false))
 	dispatch(noMoreProducts(true))
+}
+
+export const refresh = () => (dispatch) => {
+	dispatch(resetGrid())
+	dispatch(fetchProducts())
 }
 
 

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Image, View, Text, FlatList, ActivityIndicator, Alert } from 'react-native';
+import { Image, View, Text, FlatList, ActivityIndicator, Alert, TouchableOpacity } from 'react-native';
 import { connect } from 'react-redux';
 import ModalSelector from 'react-native-modal-selector';
 import EmptyState from '../components/EmptyState';
@@ -7,7 +7,7 @@ import ProductItem from '../components/ProductItem';
 import AdItem from '../components/AdItem';
 import  TappableIcon from '../components/TappableIcon';
 import IconTextPair from '../components/IconTextPair';
-import { fetchProducts, fetchMoreProducts, sortGridBy, handleIdleFetch } from '../../actions'
+import { fetchProducts, fetchMoreProducts, sortGridBy, handleIdleFetch, refresh } from '../../actions'
 import { ENV } from '../../Constants';
 
 const viewStyles = {
@@ -175,7 +175,7 @@ class ProductsGridScreen extends Component {
  };
 
   render() {
-    const {products, fetchMoreProducts} = this.props
+    const {products, fetchMoreProducts, } = this.props
     return (
       <View style={viewStyles.container}>
 
@@ -207,9 +207,11 @@ class ProductsGridScreen extends Component {
             </ModalSelector>
           </View>
           <View style={viewStyles.subheaderStyle}>
-            <Text style={textStyles.subheaderTitle}>
-              REFINE
-            </Text>
+            <TouchableOpacity onPress={this.props.refresh}>
+              <Text style={textStyles.subheaderTitle}>
+                REFINE
+              </Text>
+            </TouchableOpacity>
           </View>
         </View>
         {/* header three container */}
@@ -249,4 +251,4 @@ const mapStateToProps = (state) => {
   return { products, isFetching, isLoadingMore, noMoreProducts }
 };
 
-export default connect(mapStateToProps, { fetchProducts, fetchMoreProducts, sortGridBy, handleIdleFetch })(ProductsGridScreen)
+export default connect(mapStateToProps, { refresh, fetchProducts, fetchMoreProducts, sortGridBy, handleIdleFetch })(ProductsGridScreen)
