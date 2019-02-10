@@ -111,11 +111,11 @@ const grids = (state = initialGrids, action) => {
 		case RESET_GRID:
 			return(
 				Object.assign({}, state, {
+					idleFetchedProducts: [],
+					products: [],
 					page: 1,
 					modCount: 0,
 					isIdleFetch: false,
-					products: [],
-					idleFetchedProducts: [],
 					isFetching: false,
 					isLoadingMore: false,
 					adIndex: PRODUCTS_BEFORE_AD
