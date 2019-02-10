@@ -131,6 +131,7 @@ export const endOfCatalog = () => (dispatch) => {
 export const refresh = () => (dispatch) => {
 	dispatch(resetGrid())
 	dispatch(fetchProducts())
+	dispatch(handleIdleFetch())
 }
 
 
