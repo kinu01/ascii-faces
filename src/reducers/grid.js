@@ -120,10 +120,13 @@ const grids = (state = initialGrids, action) => {
 				Object.assign({}, state, {
 					page: 1,
 					modCount: 0,
+					isIdleFetch: false,
 					products: [],
 					idleFetchedProducts: [],
 					isFetching: false,
-					isLoadingMore: false
+					isLoadingMore: false,
+					adIndex: PRODUCTS_BEFORE_AD
+
       	})
 			);
 		case MOVE_IDLE_FETCH:
