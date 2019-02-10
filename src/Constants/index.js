@@ -17,14 +17,13 @@ export const WELCOME_MESSAGE = {
 };
 
 
-
 export const API_ENDPOINT = '/products'
 const DEV = {
   API: {
     baseURL: 'http://localhost:3000/',
     timeout: 9000,
   },
-  AD_PARAMS: 'https://unsplash.it/',
+  AD_PARAMS: 'http://localhost:3000/ads/?r=',
   AD_URL: 'https://unsplash.it'
 }
 

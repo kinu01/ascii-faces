@@ -138,6 +138,7 @@ addProductOrSponsporAdToStore = ({products, idleFetchedProducts, response, adInd
 
 	for (startCount, countLength , responseDataIndex; startCount < countLength; startCount++) {
 		if(startCount == adIndex){
+			//i.e if we should be displaying sponspor ad. at this index, then push the ad. to products array
 			dispatch(pushAdToProductsArray())
 			handleFetchedProduct(responseDataIndex, response, isIdleFetch, dispatch);
 			dispatch(increaseAdIndex())
