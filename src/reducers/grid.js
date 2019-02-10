@@ -7,7 +7,6 @@ import {
 	 ADD_IDLE_PRODUCTS,
 	 CHANGE_SORT,
 	 IDLE_FETCHING,
-	 INCREASE_MOD_COUNT,
 	 PUSH_AD,
 	 RESET_GRID,
 	 MOVE_IDLE_FETCH,
@@ -103,12 +102,6 @@ const grids = (state = initialGrids, action) => {
         	isIdleFetch: action.isIdleFetch
       	})
 			);
-		case INCREASE_MOD_COUNT:
-			return(
-				Object.assign({}, state, {
-        	modCount: state.modCount + 1
-      	})
-		);
 		case PUSH_AD:
 			return(
 				Object.assign({}, state, {
@@ -126,7 +119,6 @@ const grids = (state = initialGrids, action) => {
 					isFetching: false,
 					isLoadingMore: false,
 					adIndex: PRODUCTS_BEFORE_AD
-
       	})
 			);
 		case MOVE_IDLE_FETCH:
