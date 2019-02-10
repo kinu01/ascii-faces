@@ -42,7 +42,7 @@ const Welcome = (props) => (
         image: <Image
                   resizeMode="contain"
                   style={styles.ImageStyle}
-                  source={{uri:ENV.AD_PARAMS}}
+                  source={{uri:ENV.AD_PARAMS + '2'}}
                 />,
         title: WELCOME_MESSAGE.SCREEN_THREE_TITLE,
         subtitle: WELCOME_MESSAGE.SCREEN_THREE_SUBTITLE,
